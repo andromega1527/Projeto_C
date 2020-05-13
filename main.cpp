@@ -1,10 +1,8 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <locale.h>
-#include <locale.h>
 
 int main() {
-
-setlocale(LC_ALL,"");
+    setlocale(LC_ALL, "");
 
 }
