@@ -60,7 +60,8 @@ int main() {
 	getchar();
 	clear();
 	printf("Bem vindo ao jogo de perguntas e respostas!\nAqui voce terá¡ que Responder a perguntas sobre o tema que você escolher\n");
-
+	getchar();
+	clear();
 	get_questions(questions);
 	get_responses(responses);
 	
