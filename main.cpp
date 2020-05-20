@@ -12,9 +12,11 @@
 #define clear() system("clear")
 #endif
 
+#define LINE_NUMBER 100
+
 bool is_digit_first_position(char string[]) {
 	char digit[] = {string[0]};
-	if(strcmp(digit, "1") == 0 || strcmp(digit, "2") == 0 || strcmp(digit, "0") == 0)
+	if(strcmp(digit, "3") == -1)
 		return true;
 	return false;
 }
@@ -22,9 +24,9 @@ bool is_digit_first_position(char string[]) {
 void get_questions(char questions[][100]) {
 	FILE *file = fopen("questions.txt", "rt");
 	int count=0;
-	char line[119];
+	char line[LINE_NUMBER];
 	char *result;
-	for(int i=0; i<100; i++) {
+	for(int i=0; i<LINE_NUMBER; i++) {
 		result = fgets(line, 100, file);
 		if(is_digit_first_position(result)) {
 			strcpy(questions[count], result);
@@ -37,9 +39,9 @@ void get_questions(char questions[][100]) {
 void get_responses(char responses[][100]) {
 	FILE *file = fopen("questions.txt", "rt");
 	int count=0;
-	char line[119];
+	char line[LINE_NUMBER];
 	char *result;
-	for(int i=0; i<100; i++) {
+	for(int i=0; i<LINE_NUMBER; i++) {
 		result = fgets(line, 100, file);
 		if(!is_digit_first_position(result)) {
 			strcpy(responses[count], result);
@@ -57,11 +59,11 @@ int main() {
 	printf("Salveeeeee");
 	getchar();
 	clear();
-	printf("Bem vindo ao jogo de perguntas e respostas!\nAqui voce terÃ¡ que Responder a perguntas sobre o tema que vocÃª escolher\n");
+	printf("Bem vindo ao jogo de perguntas e respostas!\nAqui voce terá¡ que Responder a perguntas sobre o tema que você escolher\n");
 
 	get_questions(questions);
 	get_responses(responses);
-
+	
 	for(int i=0; i<20; i++) {
 		printf("%s", questions[i]);
 		for(int j=0; j<4; j++) {
