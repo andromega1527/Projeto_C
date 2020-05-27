@@ -1,40 +1,40 @@
 01. Onde surgio a lenda do Rei Arthur?
-a - *Cultura mediaval britanica
+a*- Cultura mediaval britanica
 b - Quadrinhos
 c - Cultura Grega Antiga
 d - Cultura Viking
 02. Em epoca se passa a lenda do Rei Arthur?
 a - Seculo X e XI
 b - Seculo XX
-c - *Seculo V e VI
+c*- Seculo V e VI
 d - Seculo XV
 03. Quem era o pai do Rei Arthur?
 a - Caldes Pendragon
 b - Mordred Perdragon
 c - Baltazar Pendragon
-d - *Uther Pendragon
+d*- Uther Pendragon
 04. Como Rei Arthur se torna Rei?
 a - Direito de sangue
-b - *Retirando a espada da pedra
+b*- Retirando a espada da pedra
 c - Pela Lei da Surpresa
 d - Por uma Mak'gora
 05. Quantas batalhas o Rei Arthur lutou?
 a - 5
-b - *12
+b*- 12
 c - 10
 d - 7
 06. Quem foi a primeira esposa do Rei Arthur?
 a - Morgana
 b - Elisabeth
-c - *Guinevere
+c*- Guinevere
 d - Leonora
 07. Qual cavaleiro da tavula redonda encontrou o Graal?
-a - *Percival, Boors e Galahad
+a*- Percival, Boors e Galahad
 b - Lancelote, Galahad e Kay
 c - Bedivire, Uter e Boors
 d - Uter, Gawain, Bedivire
 08. Onde ficou a espada depois que o Rei Arthur morreu?
-a - *A Dama do Lago
+a*- A Dama do Lago
 b - A Dama do Rio
 c - A Dama Terra
 d - A Dama da Floresta
@@ -42,34 +42,34 @@ d - A Dama da Floresta
 a - Cadeira
 b - Espada
 c - Bandeira
-d - *Mesa
+d*- Mesa
 10. Os cavaleiros da Távola Redonda deveriam ser:
 a - Puros de alma
 b - Puros de mente
-c - *Puros de coração
+c*- Puros de coração
 d - Puros de espirito
 11. Quem matou o Rei Arthur?
 a - Morgana
 b - Kayle
-c - *Mordred
+c*- Mordred
 d - Merlin
 12. Quem foi Merlin?
-a - *Um Mago
+a*- Um Mago
 b - Um Cavaleiro
 c - Um Druida
 d - Um Bardo
 13. Qual o proposito da Távola Redonda?
-a - *Igualde
+a*- Igualde
 b - Ambição
 c - Superioridade
 d - Justiça
 14. Porque Morgana virou do mal?
 a - Ficou louca
-b - *Foi corrompida
+b*- Foi corrompida
 c - Se interressou pela magia sombria
 d - Foi enfeitiçada
 15. Onde Merlin Nasceu?
-a - *Ealdor
+a*- Ealdor
 b - Avalon
 c - Sarras
 d - Tintagel
@@ -77,24 +77,24 @@ d - Tintagel
 a - 10
 b - 20
 c - 16
-d - *18
+d*- 18
 17. Como Merlin era conhecido pelos Druidas?
 a - Merlin
-b - *Emrys
+b*- Emrys
 c - Armes
 d - Dyfed
 18. Quem ensinou magia para o Merlin?
 a - Uther
 b - Morgana
-c - *Gaius
+c*- Gaius
 d - Kilgharrah
 19. Quem disse a Merlin que ele estava destinado a grandes coisas?
 a - Gaius
-b - *Kilgharrah
+b*- Kilgharrah
 c - Uther
 d - Kay
 20. Qual o siginificado de Emrys
-a - *Imortal
+a*- Imortal
 b - Grandioso
 c - Dragonlord (Senhor do Dragão)
 d - Lenda

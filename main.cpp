@@ -21,6 +21,19 @@ bool is_digit_first_position(char string[]) {
 	return false;
 }
 
+bool is_correct_response(char response[]) {
+	char digit[] = {response[1]};
+	if(strcmp(digit, "*") == 1)
+		return true;
+	return false;
+}
+
+char *clear_result(char result[]) {
+	char character[]=" ";
+	result[1] = character[0];
+	return result;
+}
+
 void get_questions(char questions[][100]) {
 	FILE *file = fopen("questions.txt", "rt");
 	int count=0;
@@ -36,14 +49,19 @@ void get_questions(char questions[][100]) {
 	fclose(file);
 }
 
-void get_responses(char responses[][100]) {
+void get_responses(char responses[][100], char correct_responses[][100]) {
 	FILE *file = fopen("questions.txt", "rt");
-	int count=0;
+	int count=0, count_correct_responses=0;
 	char line[LINE_NUMBER];
 	char *result;
 	for(int i=0; i<LINE_NUMBER; i++) {
 		result = fgets(line, 100, file);
 		if(!is_digit_first_position(result)) {
+			if(is_correct_response(result)) {
+				result = clear_result(result);
+				strcpy(correct_responses[count_correct_responses], result);
+				count_correct_responses++;
+			}
 			strcpy(responses[count], result);
 			count++;
 		}
@@ -53,8 +71,8 @@ void get_responses(char responses[][100]) {
 
 int main() {
     setlocale(LC_ALL, "");
-	char responses[80][100], questions[20][100], responses_users[20][2];
-	int count_responses=0;
+	char responses[80][100], questions[20][100], responses_users[20][2], correct_responses[20][100];
+	int count_responses=0, life=3;
 
 	printf("Salveeeeee");
 	getchar();
@@ -62,8 +80,9 @@ int main() {
 	printf("Bem vindo ao jogo de perguntas e respostas!\nAqui voce terá¡ que Responder a perguntas sobre o tema que você escolher\n");
 	getchar();
 	clear();
+	
 	get_questions(questions);
-	get_responses(responses);
+	get_responses(responses, correct_responses);
 	
 	for(int i=0; i<20; i++) {
 		printf("%s", questions[i]);
@@ -75,5 +94,14 @@ int main() {
 		printf("\n\n");
 		scanf("%s", responses_users[i]);
 		clear();
+		
+		if(((char*)correct_responses[i])[0] != ((char*)responses_users[i])[0])
+			life--;
+			
+		if(life==0) {
+			printf("Suas vidas acabaram!");
+			getchar();
+			break;
+		}	
 	}
 }
