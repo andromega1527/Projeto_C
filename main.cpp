@@ -4,14 +4,6 @@
 #include <unistd.h>
 #include <string.h>
 
-#if defined(__MINGW32__) || defined(_MSC_VER)
-#define limpar_input() fflush(stdin)
-#define clear() system("cls")
-#else
-#define limpar_input() __fpurge(stdin)
-#define clear() system("clear")
-#endif
-
 #define LINE_NUMBER 100
 
 bool is_digit_first_position(char string[]) {
@@ -74,10 +66,10 @@ int main() {
 
 	printf("Salveeeeee");
 	getchar();
-	clear();
-	printf("Bem vindo ao jogo de perguntas e respostas!\nAqui voce terá¡ que Responder a perguntas sobre o tema que você escolher\n");
+	system("cls");
+	printf("Bem vindo ao jogo de perguntas e respostas!\nAqui voce terá que Responder a perguntas sobre o tema que você escolher\n");
 	getchar();
-	clear();
+	system("cls");
 	
 	get_questions(questions);
 	get_responses(responses, correct_responses);
@@ -91,7 +83,7 @@ int main() {
 
 		printf("\n\n");
 		scanf("%s", responses_users[i]);
-		clear();
+		system("cls");
 		
 		if(((char*)correct_responses[i])[0] != ((char*)responses_users[i])[0])
 			life--;
