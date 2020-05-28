@@ -37,8 +37,7 @@ char *clear_result(char result[]) {
 void get_questions(char questions[][100]) {
 	FILE *file = fopen("questions.txt", "rt");
 	int count=0;
-	char line[LINE_NUMBER];
-	char *result;
+	char line[LINE_NUMBER], *result;
 	for(int i=0; i<LINE_NUMBER; i++) {
 		result = fgets(line, 100, file);
 		if(is_digit_first_position(result)) {
@@ -52,8 +51,7 @@ void get_questions(char questions[][100]) {
 void get_responses(char responses[][100], char correct_responses[][100]) {
 	FILE *file = fopen("questions.txt", "rt");
 	int count=0, count_correct_responses=0;
-	char line[LINE_NUMBER];
-	char *result;
+	char line[LINE_NUMBER], *result;
 	for(int i=0; i<LINE_NUMBER; i++) {
 		result = fgets(line, 100, file);
 		if(!is_digit_first_position(result)) {
@@ -102,6 +100,6 @@ int main() {
 			printf("Suas vidas acabaram!");
 			getchar();
 			break;
-		}	
+		}
 	}
 }
