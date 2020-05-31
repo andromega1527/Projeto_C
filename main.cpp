@@ -59,10 +59,19 @@ void get_responses(char responses[][100], char correct_responses[][100]) {
 	fclose(file);
 }
 
+void print_points(int points, int life) {
+	printf("Você fez %d de 20000", points);
+	if(life == 0)
+		printf("\nMas infelismente você perdeu tudo, então até a próxima :)");
+	else
+		printf("\nVocê chegou ao final sem perder todas as suas vidas, PARABÉNS!!!");
+	getchar();
+}
+
 int main() {
     setlocale(LC_ALL, "");
 	char responses[80][100], questions[20][100], responses_users[20][2], correct_responses[20][100];
-	int count_responses=0, life=3;
+	int count_responses=0, life=3, points;
 
 	printf("Salveeeeee");
 	getchar();
@@ -87,6 +96,8 @@ int main() {
 		
 		if(((char*)correct_responses[i])[0] != ((char*)responses_users[i])[0])
 			life--;
+		else
+			points += 100;
 			
 		if(life==0) {
 			printf("Suas vidas acabaram!");
@@ -94,4 +105,6 @@ int main() {
 			break;
 		}
 	}
+	
+	print_points(points, life);
 }
